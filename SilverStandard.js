@@ -16,6 +16,14 @@ Hooks.on('renderAlt5eSheet', (sheet, html) => {
   html.find('.denomination.ep').remove();
   html.find('[name="data.currency.ep"]').remove();
 });
+Hooks.on('renderLootSheetNPC5e', (sheet, html) => {
+  html.find('.denomination.ep').remove();
+  html.find('[name="data.currency.ep"]').remove();
+});
+Hooks.on('renderMerchantSheetNPC', (sheet, html) => {
+  html.find('.denomination.ep').remove();
+  html.find('[name="data.currency.ep"]').remove();
+});
 
 Hooks.once('ready', () => {
   CONFIG.Actor.sheetClasses.character['dnd5e.ActorSheet5eCharacter'].cls.prototype._onConvertCurrency = _onMyConvertCurrency;
