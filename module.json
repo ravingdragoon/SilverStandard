@@ -12,7 +12,7 @@
   "packs": [],
   "url": "https://github.com/RavingDragoon/SilverStandard/",
   "manifest": "https://raw.githubusercontent.com/ravingdragoon/SilverStandard/master/module.json",
-  "download": "https://github.com/RavingDragoon/SilverStandard/releases/download/0.2/SilverStandard.zip",
+  "download": "https://github.com/RavingDragoon/SilverStandard/releases/download/0.2.1/SilverStandard.zip",
   "minimumCoreVersion": "0.5.5",
   "compatibleCoreVersion": "0.8.9"
 
