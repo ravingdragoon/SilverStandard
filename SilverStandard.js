@@ -27,7 +27,7 @@ Hooks.on('renderMerchantSheetNPC', (sheet, html) => {
 Hooks.on('renderItemSheet5eWithBags', (sheet, html) => {
   html.find('.denomination.ep').remove();
   html.find('[name="data.currency.ep"]').remove();
-  html.find("Electrum").remove();
+  html.find('"Electrum"').remove();
 });
 
 
