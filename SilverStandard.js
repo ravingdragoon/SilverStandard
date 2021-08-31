@@ -26,8 +26,10 @@ Hooks.on('renderMerchantSheetNPC', (sheet, html) => {
 });
 Hooks.on('renderItemSheet5eWithBags', (sheet, html) => {
   html.find('.denomination.ep').remove();
-  html.find('[name="data.currency.electrum"]').remove();
+  html.find('[name="data.currency.ep"]').remove();
+  html.find("Electrum").remove();
 });
+
 
 Hooks.once('ready', () => {
   CONFIG.Actor.sheetClasses.character['dnd5e.ActorSheet5eCharacter'].cls.prototype._onConvertCurrency = _onMyConvertCurrency;
