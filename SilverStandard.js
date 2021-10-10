@@ -9,25 +9,25 @@ Hooks.on('renderTidy5eSheet', (sheet, html) => {
     html.find('[name="data.currency.ep"]').remove();
 });
 Hooks.on('renderDNDBeyondCharacterSheet5e', (sheet, html) => {
-  html.find('.denomination.ep').remove();
-  html.find('[name="data.currency.ep"]').remove();
+    html.find('.denomination.ep').remove();
+    html.find('[name="data.currency.ep"]').remove();
 });
 Hooks.on('renderAlt5eSheet', (sheet, html) => {
-  html.find('.denomination.ep').remove();
-  html.find('[name="data.currency.ep"]').remove();
+    html.find('.denomination.ep').remove();
+    html.find('[name="data.currency.ep"]').remove();
 });
 Hooks.on('renderLootSheetNPC5e', (sheet, html) => {
-  html.find('.denomination.ep').remove();
-  html.find('[name="data.currency.ep"]').remove();
+    html.find('.denomination.ep').remove();
+    html.find('[name="data.currency.ep"]').remove();
 });
 Hooks.on('renderMerchantSheetNPC', (sheet, html) => {
-  html.find('.denomination.ep').remove();
-  html.find('[name="data.currency.ep"]').remove();
+    html.find('.denomination.ep').remove();
+    html.find('[name="data.currency.ep"]').remove();
 });
 Hooks.on('renderItemSheet5eWithBags', (sheet, html) => {
-  html.find('.denomination.ep').remove();
-  html.find('[name="data.currency.ep"]').remove();
-  html.find('"Electrum"').remove();
+    html.find('.denomination.ep').remove();
+    html.find('[name="data.currency.ep"]').remove();
+    html.find('"Electrum"').remove();
 });
 
 
@@ -41,8 +41,8 @@ Hooks.once('ready', () => {
     console.log(curr);
     const convert = {
       cp: {into: "sp", each: 10},
-      sp: {into: "gp", each: 100},
-      gp: {into: "pp", each: 100}
+      sp: {into: "gp", each: 10},
+      gp: {into: "pp", each: 10}
     };
     for ( let [c, t] of Object.entries(convert) ) {
       let change = Math.floor(curr[c] / t.each);
